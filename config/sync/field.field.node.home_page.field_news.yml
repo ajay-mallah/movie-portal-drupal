@@ -1,0 +1,26 @@
+uuid: fa93f094-4ec6-4419-a40f-d3a793160ce4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news
+    - node.type.home_page
+    - quicktabs.quicktabs_instance.movie
+id: node.home_page.field_news
+field_name: field_news
+entity_type: node
+bundle: home_page
+label: 'news lilst'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: e8b6e956-111c-4fc8-89c5-d29c2e8b6896
+default_value_callback: ''
+settings:
+  handler: 'default:quicktabs_instance'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

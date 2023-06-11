@@ -1,0 +1,22 @@
+uuid: 83a6c442-fc78-4fd6-9133-a4a5b0d1888a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: top_ten_lists
+label: 'top ten lists'
+type: 'canonical_entities:node'
+pattern: '/top-ten-lists/[node:title]'
+selection_criteria:
+  c71cc244-6f7b-4687-b497-ee15cfd81caa:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: c71cc244-6f7b-4687-b497-ee15cfd81caa
+    context_mapping:
+      node: node
+    bundles:
+      list: list
+selection_logic: and
+weight: -5
+relationships: {  }

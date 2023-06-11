@@ -1,0 +1,68 @@
+uuid: 3b2182b6-af78-4946-b2eb-60a771939f4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.list.field_reviews_list
+    - field.field.node.list.field_why_these_are_in_the_list
+    - node.type.list
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          066e4795-3c0f-4952-8d69-ad352d18ff16:
+            uuid: 066e4795-3c0f-4952-8d69-ad352d18ff16
+            region: content
+            configuration:
+              id: 'extra_field_block:node:list:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          cd4ca3f2-be8f-40cb-8d67-c17713432217:
+            uuid: cd4ca3f2-be8f-40cb-8d67-c17713432217
+            region: content
+            configuration:
+              id: 'field_block:node:list:field_why_these_are_in_the_list'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.list.teaser
+targetEntityType: node
+bundle: list
+mode: teaser
+content:
+  field_why_these_are_in_the_list:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_reviews_list: true

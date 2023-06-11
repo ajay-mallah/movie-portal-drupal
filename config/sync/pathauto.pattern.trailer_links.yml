@@ -1,0 +1,22 @@
+uuid: 1a496d55-a605-4c50-ba67-4e983d4b61a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: trailer_links
+label: 'trailer links'
+type: 'canonical_entities:node'
+pattern: '/trailers/[node:title]'
+selection_criteria:
+  9ec25535-7c04-49b9-8aee-1557274a98ef:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 9ec25535-7c04-49b9-8aee-1557274a98ef
+    context_mapping:
+      node: node
+    bundles:
+      trailers: trailers
+selection_logic: and
+weight: -5
+relationships: {  }

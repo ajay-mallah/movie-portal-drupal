@@ -1,0 +1,15 @@
+uuid: 03de520a-9af0-4b76-9eb7-1023822519fa
+langcode: en
+status: true
+dependencies: {  }
+name: review_list_130_100_
+label: 'review list (130*100)'
+effects:
+  bd430452-d7cf-4912-a76b-40f06df5a9dd:
+    uuid: bd430452-d7cf-4912-a76b-40f06df5a9dd
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 130
+      height: 100
+      anchor: center-bottom
