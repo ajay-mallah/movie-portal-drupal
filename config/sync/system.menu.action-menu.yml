@@ -1,8 +1,0 @@
-uuid: 3573fb13-a556-4dc0-8680-89dc5645e789
-langcode: en
-status: true
-dependencies: {  }
-id: action-menu
-label: 'Action menu'
-description: 'navigation menu for the actions'
-locked: false

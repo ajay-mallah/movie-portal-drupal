@@ -1,8 +1,0 @@
-uuid: 50bca4de-99cd-43e5-863e-01a222058a99
-langcode: en
-status: true
-dependencies: {  }
-name: News
-vid: news
-description: 'vocabulary for news types'
-weight: 0

@@ -1,8 +1,0 @@
-uuid: 953d942b-b6c7-4ea7-815b-b6ac5f69f92a
-langcode: en
-status: true
-dependencies: {  }
-name: Genre
-vid: genre
-description: "movie's genre"
-weight: 0

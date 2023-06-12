@@ -1,18 +1,9 @@
 uuid: ddc18d89-4084-45ee-a9aa-14c654b67287
 langcode: en
 status: true
-dependencies:
-  config:
-    - node.type.list
-    - node.type.reviews
-  module:
-    - node
+dependencies: {  }
 id: movie_manager
 label: 'movie manager'
 weight: 4
 is_admin: null
-permissions:
-  - 'create list content'
-  - 'create reviews content'
-  - 'delete any list content'
-  - 'delete any reviews content'
+permissions: {  }
