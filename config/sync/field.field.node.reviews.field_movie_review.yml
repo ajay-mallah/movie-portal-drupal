@@ -1,0 +1,23 @@
+uuid: e58fb017-e303-41b5-81ea-f74e644f9786
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movie_review
+    - node.type.reviews
+  module:
+    - text
+id: node.reviews.field_movie_review
+field_name: field_movie_review
+entity_type: node
+bundle: reviews
+label: Review
+description: 'movie review and summary.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

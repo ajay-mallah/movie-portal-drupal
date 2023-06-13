@@ -1,0 +1,21 @@
+uuid: f17dd899-4296-49f9-954b-1f19558618ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - views
+    - viewsreference
+id: node.field_recent_reviews
+field_name: field_recent_reviews
+entity_type: node
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

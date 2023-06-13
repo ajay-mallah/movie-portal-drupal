@@ -1,0 +1,67 @@
+uuid: 4c13906c-15eb-4a4e-9427-53eb17f9567d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.recent_view_mode
+    - field.field.node.reviews.field_movie_genre
+    - field.field.node.reviews.field_movie_links
+    - field.field.node.reviews.field_movie_release_date
+    - field.field.node.reviews.field_movie_review
+    - field.field.node.reviews.field_plot
+    - field.field.node.reviews.field_thumbnails
+    - node.type.reviews
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          a7aa3043-62b5-4f51-8fe7-da358f382d84:
+            uuid: a7aa3043-62b5-4f51-8fe7-da358f382d84
+            region: content
+            configuration:
+              id: 'field_block:node:reviews:field_movie_links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.reviews.recent_view_mode
+targetEntityType: node
+bundle: reviews
+mode: recent_view_mode
+content:
+  field_movie_links:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_movie_genre: true
+  field_movie_release_date: true
+  field_movie_review: true
+  field_plot: true
+  field_thumbnails: true
+  links: true

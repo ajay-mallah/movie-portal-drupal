@@ -1,0 +1,30 @@
+uuid: 1928cd9e-a433-44e9-89ca-934973683e45
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_reviews
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: views_block__recent_reviews_block_1
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:recent_reviews-block_1'
+settings:
+  id: 'views_block:recent_reviews-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/reviews/*'

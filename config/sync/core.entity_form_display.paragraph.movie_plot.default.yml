@@ -1,0 +1,38 @@
+uuid: b1a1da59-95c2-426e-96f2-55856485db9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.movie_plot.field_plot
+    - field.field.paragraph.movie_plot.field_thumbnails
+    - paragraphs.paragraphs_type.movie_plot
+  module:
+    - text
+id: paragraph.movie_plot.default
+targetEntityType: paragraph
+bundle: movie_plot
+mode: default
+content:
+  field_plot:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_thumbnails:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,29 @@
+uuid: 5c19dcc3-dbec-4ee0-9ad4-401610f49d7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reviews_list
+    - node.type.list
+    - node.type.reviews
+id: node.list.field_reviews_list
+field_name: field_reviews_list
+entity_type: node
+bundle: list
+label: 'reviews list'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      reviews: reviews
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

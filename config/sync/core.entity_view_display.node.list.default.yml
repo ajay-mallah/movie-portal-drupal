@@ -1,0 +1,37 @@
+uuid: 135b7774-6660-4f09-bd56-8cb2e0c9b243
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.list.field_reviews_list
+    - field.field.node.list.field_why_these_are_in_the_list
+    - node.type.list
+  module:
+    - user
+id: node.list.default
+targetEntityType: node
+bundle: list
+mode: default
+content:
+  field_reviews_list:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_why_these_are_in_the_list:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

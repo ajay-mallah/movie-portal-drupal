@@ -1,0 +1,10 @@
+uuid: fcb1bd18-97f5-47d0-b353-c178f131a5c3
+langcode: en
+status: true
+dependencies: {  }
+id: links_related_to_movie
+label: 'links related to movie'
+icon_uuid: null
+icon_default: null
+description: 'contains links related to move (Trailers, In Cinemas, Buy on DVD, Netflix).'
+behavior_plugins: {  }
