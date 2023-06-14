@@ -1,0 +1,23 @@
+uuid: 75fe15bd-751c-4b65-b6a1-b7d317f8cd00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_movie_by_on_dvd
+    - paragraphs.paragraphs_type.links_related_to_movie
+  module:
+    - link
+id: paragraph.links_related_to_movie.field_movie_by_on_dvd
+field_name: field_movie_by_on_dvd
+entity_type: paragraph
+bundle: links_related_to_movie
+label: 'By on DVD'
+description: "purchase link for the movie's DVD"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

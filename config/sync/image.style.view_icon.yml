@@ -1,0 +1,15 @@
+uuid: c0b1b4e7-9ae9-4db9-a46e-01390a367f07
+langcode: en
+status: true
+dependencies: {  }
+name: view_icon
+label: 'view icon'
+effects:
+  57897fe9-1097-4624-9579-3704cbbc6ac1:
+    uuid: 57897fe9-1097-4624-9579-3704cbbc6ac1
+    id: image_scale
+    weight: 1
+    data:
+      width: 150
+      height: null
+      upscale: false

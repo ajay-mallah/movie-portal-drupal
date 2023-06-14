@@ -1,0 +1,125 @@
+uuid: 333ff41b-3835-4d46-933c-2be2beea24a5
+langcode: en
+status: true
+dependencies: {  }
+id: review
+label: review
+code: |-
+  .paragraph--type--links-related-to-movie, .field--name-field-movie-genre{
+  	display: flex;
+  	justify-content: flex-start;
+  	align-items: center;
+  	margin: 0.5rem 0px;
+  }
+
+  .paragraph--type--links-related-to-movie > .field__item {
+  	border-right: 3px solid grey;
+  	padding-right: 1rem;
+  	margin-right:1rem;
+  }
+
+  .paragraph--type--links-related-to-movie> .field__item:nth-child(4) {
+  	border-right: none;
+  	padding-right: 0px;
+  	margin-right:0px;
+  }
+
+  .field--name-field-movie-genre > .field__item {
+  	border-right: 3px solid grey;
+  	padding-right: 1rem;
+  	margin-right:1rem;
+  }
+
+  .field--name-field-movie-genre > .field__item:nth-child(3) {
+  	border-right: none;
+  	padding-right: 0px;
+  	margin-right:0px;
+  }
+
+  .node--type-reviews .node__content {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: center;
+  	gap: 0.5rem;
+  }
+
+  .node--type-reviews .node__meta {
+  	display: none;
+  }
+
+  .layout--twocol-section {
+  	display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .node--view-mode-teaser > h2 {
+  	display: none;
+  }
+
+  .node--type-list .node--type-list {
+  	display: flex;
+  	/*flex-direction: column;*/
+  	/*align-items: flex-start;*/
+  	/*justify*/
+  	gap: 1.5rem;
+  }
+
+  .view-taxonomy-term .view-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .node--type-home-page  .layout--twocol-section {
+  	align-items:flex-start;
+  }
+
+  .view-taxonomy-term .views-row {
+  	padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 2px grey;
+  }
+
+  .node--view-mode-teaser .layout__region--content:nth-child(1) {
+  	display:flex;
+  	gap: 1rem;
+  }
+
+  .view-display-id-block_1 ul {
+  	padding: .75rem;
+  	position: relative;
+  	border: 2px solid grey;
+  	transform-origin: center;
+  	margin-bottom: 0px;
+  }
+
+  .view-display-id-block_1 ul:before {
+  	position: absolute;
+  	content: "recommended";
+  	top:-5%;
+  	left:50%;
+  	transform: translate(-50%, -50%);
+  	padding: 0 0.5rem;
+  	background: white;
+  }
+
+  .node__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .menu--footer > ul {
+  	display:flex;
+  	flex-direction: row;
+  	justify-content: center;
+  	align-items: center;
+  	gap:1.5rem;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

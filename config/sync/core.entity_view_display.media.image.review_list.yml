@@ -1,0 +1,39 @@
+uuid: 22f8670e-4d44-4449-b8ef-d6a2a4c29eb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.review_list
+    - field.field.media.image.field_media_image
+    - image.style.review_list_130_100_
+    - media.type.image
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
+id: media.image.review_list
+targetEntityType: media
+bundle: image
+mode: review_list
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: review_list_130_100_
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

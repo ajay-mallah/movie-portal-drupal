@@ -1,9 +1,15 @@
 uuid: d940f029-9afc-43bc-887b-7e108ec14c08
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.news
+  module:
+    - node
 id: news_manager
 label: 'news manager'
 weight: 5
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create news content'
+  - 'delete any news content'

@@ -1,0 +1,19 @@
+uuid: cefa7a21-62f2-4420-911c-c6de413f13ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_plot
+field_name: field_plot
+entity_type: paragraph
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

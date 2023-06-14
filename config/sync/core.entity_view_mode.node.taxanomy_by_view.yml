@@ -1,0 +1,10 @@
+uuid: 760701b5-fd55-431d-8f7b-03b751dd4461
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.taxanomy_by_view
+label: 'taxanomy by view'
+targetEntityType: node
+cache: true
